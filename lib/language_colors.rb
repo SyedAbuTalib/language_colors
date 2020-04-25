@@ -12,12 +12,14 @@ module LanguageColors
   # Class that contains the main code
   class LanguageColors
     def initialize
-      file = File.open 'colors.json'
-      @hash = JSON.parse file
+      file = File.join(File.dirname(__FILE__), 'colors.json')
+      File.open(file) do |f|
+        @hash = JSON.parse(f.read)
+      end
     end
 
     def color(lang)
-      hash[lang]
+      @hash[lang]
     end
   end
 end

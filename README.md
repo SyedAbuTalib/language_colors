@@ -1,6 +1,8 @@
-# LanguageColors
+# language_colors
 
 This gem was created as a fast way to get the colors that Github uses to describe languages. returns a string in the form of `'#00ff00'`.
+
+[Link to RubyGems](https://rubygems.org/gems/language_colors)
 
 ## Installation
 
@@ -26,9 +28,6 @@ lc.color('cpp')
 => "#f34b7d"
 ```
 
-## Development
-
-Hmm indeed.
 
 ## Contributing
 

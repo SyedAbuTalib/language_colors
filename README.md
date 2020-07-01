@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ```ruby
 lc = LanguageColors::LanguageColors.new
-lc.color('cpp')
+lc.color('C++')
 => "#f34b7d"
 ```
 

@@ -4,7 +4,7 @@ require 'open-uri'
 require 'yaml'
 require 'json'
 
-yaml_content = open('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml',
+yaml_content = URI.open('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml',
                     &:read)
 yaml_data = YAML.safe_load(yaml_content)
 
